@@ -1,1 +1,36 @@
 [2024-07-06 19:44:12,407: INFO: main: welcome to my 1st log]
+[2024-07-06 20:56:02,753: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-07-06 20:56:02,760: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-07-06 20:56:02,762: INFO: common: created directory at: artifacts]
+[2024-07-06 20:56:02,764: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-07-06 21:04:07,166: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-07-06 21:04:07,174: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-07-06 21:04:07,176: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-07-06 21:04:07,178: INFO: common: created directory at: artifacts]
+[2024-07-06 21:04:07,179: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-07-06 21:04:07,325: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-07-06 21:21:11,620: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-07-06 21:21:11,622: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-07-06 21:21:11,624: INFO: common: created directory at: artifacts]
+[2024-07-06 21:21:11,627: INFO: common: created directory at: artifacts/prepare_base_model]
+[2024-07-06 21:21:11,667: INFO: 3280885768: Read train and test data completed]
+[2024-07-06 21:32:13,880: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-07-06 21:32:13,884: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-07-06 21:32:13,884: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-07-06 21:32:13,885: INFO: common: created directory at: artifacts]
+[2024-07-06 21:32:13,886: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-07-06 21:32:13,886: INFO: data_ingestion: Inmgestion of the data is completed]
+[2024-07-06 21:32:13,886: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-07-06 21:32:13,887: INFO: main: >>>>>> stage prepare base model stage started <<<<<<]
+[2024-07-06 21:32:13,893: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-07-06 21:32:13,894: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-07-06 21:32:13,895: INFO: common: created directory at: artifacts]
+[2024-07-06 21:32:13,897: INFO: common: created directory at: artifacts/prepare_base_model]
+[2024-07-06 21:32:13,928: INFO: prepare_base_model: Read train and test data completed]
+[2024-07-06 21:32:13,953: INFO: main: >>>>>> stage prepare base model stage completed <<<<<<
+
+x==========x]
