@@ -35,3 +35,14 @@ class TrainingConfig:
     min_samples_leaf:int
     max_depth:int
     learning_rate:float
+
+
+@dataclass(frozen=True)
+class ModelEvaluationConfig:
+    root_dir:Path
+    model_path:Path
+    all_params:dict
+    metrix_file_name:Path
+    training_data:Path
+    testing_data:Path
+    #mlflow_uri: str       

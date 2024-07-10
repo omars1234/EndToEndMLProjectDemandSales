@@ -1,7 +1,8 @@
 
 from DemandSalesRegression.constants import *
 from DemandSalesRegression.utils.common import read_yaml,create_directories
-from DemandSalesRegression.entity.config_entity import DataIngestionConfig,PrepareBaseModelConfig,TrainingConfig
+from DemandSalesRegression.entity.config_entity import (DataIngestionConfig,PrepareBaseModelConfig,
+                                                        TrainingConfig,ModelEvaluationConfig)
 import os
 
 class ConfigurationManager:
@@ -78,3 +79,22 @@ class ConfigurationManager:
         )
 
         return training_config
+    
+
+    def get_model_evaluation_config(self) -> ModelEvaluationConfig:
+        config = self.config.model_evaluation
+        params=self.params.GradientBoostingRegressor
+
+        create_directories([config.root_dir])
+
+        model_evaluation_config = ModelEvaluationConfig(
+            root_dir=Path(config.root_dir),
+            model_path=Path(config.model_path),
+            all_params=params,
+            metrix_file_name=Path(config.metrix_file_name),
+            training_data=Path(config.training_data),
+            testing_data=Path(config.testing_data),
+            #mlflow_uri="https://dagshub.com/omars1234/Regression_Analysis.mlflow" 
+        )
+
+        return model_evaluation_config
