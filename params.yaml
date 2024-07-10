@@ -1,1 +1,10 @@
-key : value
+
+ # key : value
+
+GradientBoostingRegressor: 
+  subsample: 0.8
+  n_estimators: 110
+  min_samples_split: 4
+  min_samples_leaf: 1
+  max_depth: 4
+  learning_rate: 0.1

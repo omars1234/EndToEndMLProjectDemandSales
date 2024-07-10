@@ -20,3 +20,18 @@ class PrepareBaseModelConfig:
     #updated_base_model_path:Path
     train_data_path: Path
     test_data_path: Path
+
+
+@dataclass(frozen=True)
+class TrainingConfig:
+    root_dir:Path
+    trained_model_file_path:Path
+    updated_base_model_path:Path
+    training_data:Path
+    testing_data:Path
+    subsample:float
+    n_estimators:int
+    min_samples_split:int
+    min_samples_leaf:int
+    max_depth:int
+    learning_rate:float

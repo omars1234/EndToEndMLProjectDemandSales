@@ -34,3 +34,33 @@ x==========x]
 [2024-07-06 21:32:13,953: INFO: main: >>>>>> stage prepare base model stage completed <<<<<<
 
 x==========x]
+[2024-07-10 11:57:59,528: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-07-10 11:57:59,535: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-07-10 11:57:59,537: INFO: common: created directory at: artifacts]
+[2024-07-10 11:57:59,539: INFO: common: created directory at: artifacts/training]
+[2024-07-10 12:07:45,578: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-07-10 12:07:45,582: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-07-10 12:07:45,584: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-07-10 12:07:45,585: INFO: common: created directory at: artifacts]
+[2024-07-10 12:07:45,585: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-07-10 12:07:45,586: INFO: data_ingestion: Inmgestion of the data is completed]
+[2024-07-10 12:07:45,586: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-07-10 12:07:45,587: INFO: main: >>>>>> stage prepare base model stage started <<<<<<]
+[2024-07-10 12:07:45,594: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-07-10 12:07:45,596: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-07-10 12:07:45,597: INFO: common: created directory at: artifacts]
+[2024-07-10 12:07:45,598: INFO: common: created directory at: artifacts/prepare_base_model]
+[2024-07-10 12:07:45,695: INFO: prepare_base_model: Read train and test data completed]
+[2024-07-10 12:07:45,756: INFO: main: >>>>>> stage prepare base model stage completed <<<<<<
+
+x==========x]
+[2024-07-10 12:07:45,757: INFO: main: >>>>>> stage model Training stage started <<<<<<]
+[2024-07-10 12:07:45,766: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-07-10 12:07:45,770: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-07-10 12:07:45,771: INFO: common: created directory at: artifacts]
+[2024-07-10 12:07:45,772: INFO: common: created directory at: artifacts/training]
+[2024-07-10 12:07:46,801: INFO: main: >>>>>> stage model Training stage completed <<<<<<
+
+x==========x]

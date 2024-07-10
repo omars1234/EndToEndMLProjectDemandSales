@@ -1,7 +1,8 @@
 
 from DemandSalesRegression.constants import *
 from DemandSalesRegression.utils.common import read_yaml,create_directories
-from DemandSalesRegression.entity.config_entity import DataIngestionConfig,PrepareBaseModelConfig
+from DemandSalesRegression.entity.config_entity import DataIngestionConfig,PrepareBaseModelConfig,TrainingConfig
+import os
 
 class ConfigurationManager:
     def __init__(
@@ -51,3 +52,29 @@ class ConfigurationManager:
         )
 
         return prepare_base_model_config
+    
+
+    def get_training_config(self) -> TrainingConfig:
+        training = self.config.training
+        params=self.params.GradientBoostingRegressor
+        prepare_base_model=self.config.prepare_base_model
+        training_data=os.path.join(self.config.data_ingestion.train_data_path,"train_data.csv")
+        testing_data=os.path.join(self.config.data_ingestion.test_data_path,"test_data.csv")
+        create_directories([training.root_dir])
+
+        training_config = TrainingConfig(
+            root_dir=Path(training.root_dir),
+            trained_model_file_path=Path(training.trained_model_file_path),
+            updated_base_model_path=Path(prepare_base_model.updated_base_model_path),
+            training_data=Path(training_data),
+            testing_data=Path(testing_data),
+            subsample=params.SUBSAMPLE,
+            n_estimators=params.N_ESTIMATORS,
+            min_samples_split=params.MIN_SAMPLES_SPLIT,
+            min_samples_leaf=params.MIN_SAMPLES_LEAF,
+            max_depth=params.MAX_DEPTH,
+            learning_rate=params.LEARNING_RATE
+    
+        )
+
+        return training_config
